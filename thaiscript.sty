@@ -68,8 +68,6 @@
 
 \newcommand{\usethaifont}[1]{
 
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
     \newfontfamily{\thaifont}[
         Path            = ./fonts/,
         Extension       = .ttf,
@@ -94,6 +92,9 @@
     \setTransitionTo{Thai}{\begin{thailang}}
     \setTransitionFrom{Thai}{\end{thailang}}
     % \onehalfspacing
+
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
     \def\thaialph#1{\expandafter\thalph\csname c@#1\endcsname}
     \def\thalph#1{%
         \ifcase#1\or ก\or ข\or ค\or ง\or จ\or ฉ\or ช\or ซ\or
@@ -112,6 +113,8 @@
         \expandafter\thdigits
         \fi
     }
+
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
     \renewcommand\baselinestretch{1.3}
     
